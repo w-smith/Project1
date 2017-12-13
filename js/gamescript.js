@@ -34,23 +34,23 @@ $("#metaknight").animate({marginTop: "+=3%"},-50);
 
 
 
-// BIRDON1
-$(document).ready(function() {
-    $("#birdon1").animate({right: "+=2500"},10000);
-    // $("#birdon").animate({right: "-=300"}, 1000);
-});
+// // BIRDON1
+// $(document).ready(function() {
+//     $("#birdon1").animate({right: "+=2500"},10000);
+//     // $("#birdon").animate({right: "-=300"}, 1000);
+// });
 
-// BIRDON2
-$(document).ready(function() {
-    $("#birdon2").animate({right: "+=2500"},10000);
-    // $("#birdon").animate({right: "-=300"}, 1000);
-});
+// // BIRDON2
+// $(document).ready(function() {
+//     $("#birdon2").animate({right: "+=2500"},10000);
+//     // $("#birdon").animate({right: "-=300"}, 1000);
+// });
 
-// BIRDON3
-$(document).ready(function() {
-    $("#birdon3").animate({right: "+=2500"},10000);
-    // $("#birdon").animate({right: "-=300"}, 1000);
-});
+// // BIRDON3
+// $(document).ready(function() {
+//     $("#birdon3").animate({right: "+=2500"},10000);
+//     // $("#birdon").animate({right: "-=300"}, 1000);
+// });
 
 
 
@@ -58,10 +58,15 @@ $(document).ready(function() {
 
 // SKULL1
 $(document).ready(function() {
-    $("#skull1").animate({right: "+=3000"},12000);
+    $("#skull1").animate({right: "+=120%"},12000);
 });
 
-// SKULL2
-$(document).ready(function() {
-    $("#skull2").animate({right: "+=3000"},16000);
-});
+// // SKULL2
+// $(document).ready(function() {
+//     $("#skull2").animate({right: "+=3000"},16000);
+// });
+
+
+
+
+
