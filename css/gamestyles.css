@@ -1,5 +1,17 @@
 
- html {
+
+/*BOTH FILES*/
+
+#landingHtml {
+	background: url(../images/background.png) repeat-x center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+ #gameHtml {
  background: url(../images/background.png) repeat-x center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -46,11 +58,17 @@
   100%{
     background-position: -300000px 0px;
   }
-
-
-
-
 }
+
+
+body {
+  font-family: 'KirbyClassic';
+  src: url('../fonts/KirbyClassic.ttf') format('truetype');
+}
+
+
+/*GAME PAGE STYLES*/
+
 
 #metaknight {
 	height: 130px;
@@ -111,6 +129,70 @@
 	position: absolute;
 	right: 20%;
 	top: 30%;
-	height: 120px;
-	width: 120px;
+	width: 10%
+}
+
+
+
+
+/*LANDING PAGE STYLES*/
+
+
+#splash {
+position: relative;
+top: 15vh;
+text-align: center;
+height: 60vh;
+min-height: 60vh;
+width: 60vw;
+min-width: 60vw;
+background: black;
+border: 10px double #ffaded;
+margin: auto;
+border-radius: 20px;
+}
+
+#kirbysTitle {
+	position: relative;
+	top: 7vh;
+	font-size: 10vw;
+	color: #ffaded;
+	transform: rotate(-6deg);
+	margin: 1% 10% 0 0;
+	z-index: 2;
+	text-shadow: .5vh .5vh white;
+}
+
+#spookyRide {
+	position: relative;
+	top: 11vh;
+	font-size: 9vw;
+	color: #c61aff;
+	transform: rotate(-6deg);
+	font-weight: bold;
+	margin: -10% 0 0 0;
+	z-index: 1;
+	text-shadow: .5vh .5vh white;	
+}
+
+.player {
+	display: inline;
+	text-decoration: none;
+	font-size: 3vw;
+	position: relative;
+	color: white;
+	top: 18vh;
+	margin: 0 3vh;
+}
+
+#p1Button {
+	display: inline;
+}
+
+#p2Button {
+	display: inline;
+}
+
+a:hover {
+    text-decoration: underline;
 }
