@@ -20,6 +20,17 @@
 
 }
 
+#winHtml {
+	background: url(../images/background.png) repeat-x center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+
  #gameHtml {
  background: url(../images/background.png) repeat-x center fixed; 
   -webkit-background-size: cover;

@@ -27,19 +27,6 @@ console.log(kirby.position().top);
 
 
 
-// METAKNIGHT CONTROLS
-$(window).keypress(function(o) {
-    if(o.keyCode == 111)
-    // console.log("racer1");
-$("#metaknight").animate({top: "-=3%"},-50);
-});
-
-$(window).keypress(function(l) {
-    if(l.keyCode == 108)
-    // console.log("racer1");
-$("#metaknight").animate({top: "+=3%"},-50);
-});
-
 
 
 
@@ -63,23 +50,6 @@ $(document).ready(function() {
 
 
 
-// // BIRDON4
-// $(document).ready(function() {
-//     $("#birdon4").animate({right: "+=2500"},10000);
-//     // $("#birdon").animate({right: "-=300"}, 1000);
-// });
-
-// // BIRDON4
-// $(document).ready(function() {
-//     $("#birdon5").animate({right: "+=2500"},10000);
-//     // $("#birdon").animate({right: "-=300"}, 1000);
-// });
-
-// // BIRDON6
-
-//     $("#birdon6").animate({right: "+=2500"},10000);
-//     // $("#birdon").animate({right: "-=300"}, 1000);
-
 
 
 setInterval(function(){
@@ -101,13 +71,6 @@ var kwidth = 110;
 var kirbyright = kirby.position().left + kwidth;
 var kirbyleft = kirby.position().left;
 var kheight = kirby.position().top + 120;
-
-
-
-var mk = $("#metaknight");
-var mkwidth = 115;
-var mkright = mk.position().left + mkwidth;
-var mkleft = mk.position().left;
 
 var skull1 = $("#skull1");
 var sk1width = 60;
@@ -140,12 +103,9 @@ function skullmove(){
   console.log(skull1.position().left);
 if ( skull1.position().left <= kirbyright 
         && skull1.position().top <= kirby.position().top + 100
-        && skull1.position().top + 60 >= kirby.position().top + 20
+        && skull1.position().top + 60 >= kirby.position().top +20
         && skull1.position().left + 60 >= kirby.position().left
-        || skull1.position().left <= mkright 
-        && skull1.position().top <= mk.position().top + 100
-        && skull1.position().top + 60 >= mk.position().top +50
-        && skull1.position().left + 60 >= mk.position().left
+
 
         ) {
 window.location.href = "gameover.html";
