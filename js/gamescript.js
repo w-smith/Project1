@@ -190,3 +190,24 @@ function winner() {
 winner();
 
 });
+
+
+
+
+// modal
+var modal = document.getElementById("simpleModal");
+var modalLink = document.getElementById("modalLink");
+var closeButton = document.getElementById("closeButton");
+
+modalLink.addEventListener("click", openModal);
+
+closeButton.addEventListener("click", closeModal);
+
+
+function openModal () {
+    modal.style.display = "block";
+}
+
+function closeModal () {
+    modal.style.display = "none";
+}

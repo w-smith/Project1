@@ -25,16 +25,39 @@
 		<a class="player" href="index.html">2-Player</a>
 		</div>
 
-		<div id="p2Button">
-		<a class="player" href="#.html">Instructions</a>
+		<div id="modalLink">
+		<a href="#" class="player" onclick:(javascript: openModal());> Instructions</a>
 		</div>
 
-		<div id="p2Button">
-		<a class="player" href="#.html">Credits</a>
-		</div>
+
+
 
 
 	</div>
+
+
+
+		<div id="simpleModal" class="modal" role="dialog">
+			<div class="modal-content">
+				<span id="closeButton">&times;</span>
+				<p class="player">
+					Player 1 is Kirby. 
+					<br> You use 'q' and 'a' to move up and down.
+					<br>
+					<br>
+					<br>
+					Player 2 is Meta Knight. 
+					<br> You use 'o' and 'l' to move up and down.
+					<br><br><br>
+					avoid the wave of ghost(s) and you will win!
+
+				</p>
+			</div>
+		</div>
+
+
+
+
 
 
 <!-- birdon -->
@@ -53,6 +76,8 @@
 
 
 
+<!-- MODAL BOOTSTRAP -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal-bs3patch.css"></script> -->
 <!-- jQuery -->
 	<script 
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
