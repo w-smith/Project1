@@ -178,7 +178,13 @@ $("#skull1").animate({left: "-=2%"},100, skullmove);
 
 // TIMER
 
+function winner() {
+     setTimeout(myTimeout1, 20000);}
 
+     function myTimeout1() {
+    window.location.href = "gameover.html";
+}
 
+winner();
 
 });
