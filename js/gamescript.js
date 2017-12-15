@@ -7,18 +7,18 @@ $(document).ready(function() {
 
 
 // KIRBY CONTROLS
+
+
 $(window).keypress(function(q) {
     if(q.keyCode == 113)
-    // console.log("racer1");
-$("#kirby").animate({marginTop: "-=3%"},-50);
-
+$("#kirby").animate({top: "-=5%"},-50);
 });
 
 
 $(window).keypress(function(a) {
     if(a.keyCode == 97)
-    // console.log("racer1");
-$("#kirby").animate({marginTop: "+=3%"},-50);
+$("#kirby").animate({top: "+=5%"},-50);
+console.log(kirby.position().top);
 });
 
 
@@ -31,13 +31,13 @@ $("#kirby").animate({marginTop: "+=3%"},-50);
 $(window).keypress(function(o) {
     if(o.keyCode == 111)
     // console.log("racer1");
-$("#metaknight").animate({marginTop: "-=3%"},-50);
+$("#metaknight").animate({top: "-=3%"},-50);
 });
 
 $(window).keypress(function(l) {
     if(l.keyCode == 108)
     // console.log("racer1");
-$("#metaknight").animate({marginTop: "+=3%"},-50);
+$("#metaknight").animate({top: "+=3%"},-50);
 });
 
 
@@ -94,28 +94,23 @@ $("#metaknight").animate({marginTop: "+=3%"},-50);
 
 
 var kirby = $("#kirby");
-var kwidth = 168;
+var kwidth = 110;
+var kirbyright = kirby.position().left + kwidth;
+var kheight = kirby.position().top + 120;
+
+
+
+var mk = $("#metaknight");
+var mkwidth = 115;
+var mkright = mk.position().left + mkwidth;
 
 var skull1 = $("#skull1");
 var sk1width = 60;
-
-var metaknight = $("#metaknight");
-var mkwidth = 130;
-
-
-var kposition = kirby.position();
-$("#kirby").text(console.log(kposition.left, kposition));
-
-var mkposition = metaknight.position();
-$("#metaknight").text(console.log(mkposition.left, mkposition));
-
-var sk1position = skull1.position();
-$("#skull1").text(console.log(sk1position.left, sk1position));
-
-var metaknightright = mkposition.left + mkwidth;
-
-var kirbyright = kirby.position().left + kwidth;
-console.log(kirby.position().left);
+var skull1top = skull1.position().top;
+var skull1bottom = skull1.position().top + 60;
+var skull1left = skull1.position().left;
+var skull1right = skull1.position().left + 60;
+// console.log(skull1.position().left);
 
 
 
@@ -123,21 +118,33 @@ console.log(kirby.position().left);
 
 
 
-// if ( sk1position.left <= kirbyright ) {
-//   console.log("dead");
-// }
+
+
+
+
+
+
+
+
 
 // SKULL1
  
 
-$(skull1).animate({left: "-=20%"},1000, skullmove);
+$(skull1).animate({left: "-=2%"},100, skullmove);
 function skullmove(){
-  // console.log(skull1.position().left);
-if ( skull1.position().left <= kirbyright ) {
-  console.log("dead");
+  console.log(skull1.position().left);
+if ( skull1.position().left <= kirbyright 
+        && skull1.position().top <= kirby.position().top + 100
+        && skull1.position().top + 60 >= kirby.position().top +20
+        || skull1.position().left <= mkright 
+        && skull1.position().top <= mk.position().top + 100
+        && skull1.position().top + 60 >= mk.position().top +50
+
+        ) {
+  alert("YOU FUCKING DIED BITCH!");
 }
 else {
-$("#skull1").animate({left: "-=20%"},1000, skullmove);
+$("#skull1").animate({left: "-=2%"},100, skullmove);
 
 }
 
