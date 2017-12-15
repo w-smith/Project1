@@ -11,6 +11,15 @@
 
 }
 
+#gameOverHtml {
+	background: url(../images/background.png) repeat-x center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
  #gameHtml {
  background: url(../images/background.png) repeat-x center fixed; 
   -webkit-background-size: cover;
@@ -117,13 +126,17 @@ body {
 
 #skull1 {
 	position: absolute;
-	right: 10%;
-	top: 60%;
+	right: -10%;
+	top: 40%;
 	height: 60px;
 	width: 60px;
 }
 
-#skull2 {
+
+
+
+
+/*#skully1 {
 	position: absolute;
 	right: -30%;
 	top: 10%;
@@ -137,14 +150,14 @@ body {
 	top: 30%;
 	width: 10%
 }
-
+*/
 
 
 
 /*LANDING PAGE STYLES*/
 
 
-#splash {
+.splash {
 position: relative;
 top: 15vh;
 text-align: center;
@@ -204,3 +217,5 @@ a:hover {
     text-decoration: underline;
     color: #ffaded;
 }
+
+

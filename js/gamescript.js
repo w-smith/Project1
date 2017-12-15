@@ -43,23 +43,23 @@ $("#metaknight").animate({top: "+=3%"},-50);
 
 
 
-// // BIRDON1
-// $(document).ready(function() {
-//     $("#birdon1").animate({right: "+=120%"},5000);
-//     // $("#birdon").animate({right: "-=300"}, 1000);
-// });
+// BIRDON1
+$(document).ready(function() {
+    $("#birdon1").animate({right: "+=120%"},5000);
+    // $("#birdon").animate({right: "-=300"}, 1000);
+});
 
-// // BIRDON2
-// $(document).ready(function() {
-//     $("#birdon2").animate({right: "+=120%"},5000);
-//     // $("#birdon").animate({right: "-=300"}, 1000);
-// });
+// BIRDON2
+$(document).ready(function() {
+    $("#birdon2").animate({right: "+=120%"},5000);
+    // $("#birdon").animate({right: "-=300"}, 1000);
+});
 
-// // BIRDON3
-// $(document).ready(function() {
-//     $("#birdon3").animate({right: "+=120%"},5000);
-//     // $("#birdon").animate({right: "-=300"}, 1000);
-// });
+// BIRDON3
+$(document).ready(function() {
+    $("#birdon3").animate({right: "+=120%"},5000);
+    // $("#birdon").animate({right: "-=300"}, 1000);
+});
 
 
 
@@ -82,12 +82,15 @@ $("#metaknight").animate({top: "+=3%"},-50);
 
 
 
-
-
-
-
-
-
+setInterval(function(){
+var skull2 = document.createElement("img");
+ skull2.setAttribute("src", "images/skull2gifs/skull2.gif");
+ skull2.setAttribute("class", "skull2");
+ var x = Math.floor(Math.random() * 10) * 10;
+ var z = skull2.style.marginLeft = 10 + x +"%";
+ skull2.style.marginTop = 0 +"%";
+ document.body.appendChild(skull2);
+}, 1000);
 
 
 
@@ -96,6 +99,7 @@ $("#metaknight").animate({top: "+=3%"},-50);
 var kirby = $("#kirby");
 var kwidth = 110;
 var kirbyright = kirby.position().left + kwidth;
+var kirbyleft = kirby.position().left;
 var kheight = kirby.position().top + 120;
 
 
@@ -103,6 +107,7 @@ var kheight = kirby.position().top + 120;
 var mk = $("#metaknight");
 var mkwidth = 115;
 var mkright = mk.position().left + mkwidth;
+var mkleft = mk.position().left;
 
 var skull1 = $("#skull1");
 var sk1width = 60;
@@ -141,7 +146,7 @@ if ( skull1.position().left <= kirbyright
         && skull1.position().top + 60 >= mk.position().top +50
 
         ) {
-  alert("YOU FUCKING DIED BITCH!");
+window.location.href = "gameover.html";
 }
 else {
 $("#skull1").animate({left: "-=2%"},100, skullmove);
