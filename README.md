@@ -1,25 +1,25 @@
-# KIRBY'S SPOOKY RIDE
+<h1>KIRBY'S SPOOKY RIDE</h1>
 
 
-<h1>TRELLO USER STORIES</h1>
+<h2>TRELLO USER STORIES</h2>
 <br>
 https://trello.com/b/m0hzKZKA/project-1
 
 <br>
 
-<h1>MOCKUP</h1>
+<h2>MOCKUP</h2>
 <br>
 https://imgur.com/a/fWpLi
 
-<h1>INSTRUCTIONS</h1>
+<h2>INSTRUCTIONS</h2>
 
-<h2> Player 1 is Kirby. </h2>
+<h3> Player 1 is Kirby. </h3>
 <br>
 <p>Kirby uses 'q' and 'a' to move up and down.</p>
 <br>
 <br>
 <br>
-<h2>Player 2 is Meta Knight.</h2>
+<h3>Player 2 is Meta Knight.</h3>
 <br> 
 <p>You use 'o' and 'l' to move up and down.</p>
 <br><br><br>
