@@ -35,7 +35,6 @@ https://imgur.com/a/fWpLi
 <br>
 <p>HTML, CSS, jQuery, Javascript, Modals.</p>
 <br>
-<br>
 <h2>FONT USED</h2>
 <br>
 <p>http://www.fonts4free.net/kirby-classic-font.html</p>

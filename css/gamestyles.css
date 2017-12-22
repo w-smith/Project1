@@ -85,7 +85,7 @@
 
 body {
   font-family: 'KirbyClassic';
-  src: url('../fonts/KirbyClassic.ttf') format('truetype');
+  src: url('../fonts/KirbyClassic.ttf','Delius Unicase', cursive;) format('truetype');
 }
 
 
